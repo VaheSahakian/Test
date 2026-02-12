@@ -27,6 +27,24 @@
             font-size: 1.25rem;
             opacity: 0.9;
         }
+
+        /* Dark mode */
+        body.dark {
+            background: #1a1a2e;
+            color: #e0e0e0;
+        }
+        .toggle-dark {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -34,5 +52,6 @@
         <h1>Hello, World!</h1>
         <p>A simple website, live and running.</p>
     </div>
+    <button class="toggle-dark" onclick="document.body.classList.toggle('dark')">Toggle Dark Mode</button>
 </body>
 </html>
