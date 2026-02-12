@@ -137,6 +137,31 @@
             font-size: 0.95rem;
             line-height: 1.6;
         }
+
+        /* Footer */
+        footer {
+            background: #1a1a2e;
+            color: rgba(255,255,255,0.7);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover { color: #fff; }
+        .footer-copy {
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
     </style>
 </head>
 <body>
@@ -179,5 +204,15 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">GitHub</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Starter. All rights reserved.</p>
+    </footer>
 </body>
 </html>
