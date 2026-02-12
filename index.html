@@ -90,6 +90,53 @@
             color: #fff;
             border: 2px solid rgba(255,255,255,0.6);
         }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 2rem;
+            background: #f9fafb;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .features .subtitle {
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+        }
+        .feature-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -108,6 +155,28 @@
         <div class="cta-buttons">
             <a href="#features" class="btn btn-primary">Get Started</a>
             <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <p class="subtitle">Everything you need to get started</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">&#9889;</div>
+                <h3>Lightning Fast</h3>
+                <p>Built with performance in mind. No frameworks, no bloat, just pure speed.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#127912;</div>
+                <h3>Beautiful Design</h3>
+                <p>Clean and modern aesthetics that look great on any device.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#128274;</div>
+                <h3>Secure</h3>
+                <p>Simple static files means a minimal attack surface and maximum reliability.</p>
+            </div>
         </div>
     </section>
 </body>
