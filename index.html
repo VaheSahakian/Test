@@ -3,15 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Starter - Build Something Great</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             color: #333;
         }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #fff; }
+
+        /* Hero */
         .hero {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -21,12 +54,41 @@
             padding: 2rem;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
+            max-width: 700px;
         }
         .hero p {
             font-size: 1.25rem;
             opacity: 0.9;
+            max-width: 500px;
+            margin-bottom: 2rem;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .btn-primary {
+            background: #fff;
+            color: #764ba2;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.6);
         }
 
         /* Features Section */
@@ -78,10 +140,21 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#" class="logo">Starter</a>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <section class="hero">
-        <div>
-            <h1>Hello, World!</h1>
-            <p>A simple website, live and running.</p>
+        <h1>Build Something Great</h1>
+        <p>A modern landing page to kickstart your next project. Clean, fast, and ready to go.</p>
+        <div class="cta-buttons">
+            <a href="#features" class="btn btn-primary">Get Started</a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
         </div>
     </section>
 
